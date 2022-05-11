@@ -1,569 +1,520 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru-RU">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-
-    <link rel="stylesheet" href="Flickity.css" media="screen" />
-    <title>Document</title>
+    <link rel="stylesheet" href="lang-menu.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeatMarket</title>
+    <link rel="icon" href="svg/favicon.svg" type="image/x-icon" />
   </head>
+
   <body>
-    <header class="header">
-      <div class="header__top">
-        <div class="header__top-container">
-          <div class="header__top-inner">
-            <div class="logo">
-              <a class="logo__link" href="#">
-                <img class="logo__img" src="svg/Logo.svg" alt="" />
-              </a>
+    <div class="background-blue header-bg">
+      <header class="container-width">
+        <div class="container-desktop">
+          <div class="header-logo">
+            <div onclick="show_links()" class="links-menu">
+              <img class="xmenu" src="svg/mobile/headermenu.svg" alt="" />
+              <img class="xcros hide" src="svg/mobile/headerxcros.svg" alt="" />
             </div>
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__list-item">
-                  <a class="menu__link menu__link--active" href="#">HOME</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__link" href="#">ABOUT US</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__link" href="#">PORTFOLIO</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__link" href="#">OUR TEAM</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__link" href="#">BLOG</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__link" href="#">CONTACT</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div class="header__content">
-        <div class="header__content-container">
-          <div class="header__content-inner">
-            <h1 class="header__content-title">OXYGEN</h1>
-            <p class="header__content-description">STARTER UI KIT</p>
-          </div>
-        </div>
-        <div class="header__content-scroll-decor">
-          <div class="header__content_scroll-dot"></div>
-        </div>
-      </div>
-    </header>
-    <section class="about">
-      <div class="container">
-        <div class="about__wrapper">
-          <div class="about__inner">
-            <div class="title about__title">About Us</div>
-            <div class="title__underline"></div>
-          </div>
-          <div class="about__text content-text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Laudantium commodi totam culpa, dolorum asperiores iusto quidem,
-              nesciunt hic eaque blanditiis enim, id maiores nam nobis
-              dignissimos aliquam ad minus nisi. In, fuga blanditiis non cum
-              cupiditate dolore, accusantium odio doloremque quibusdam
-              dignissimos nemo sed nisi, similique, mollitia et! Autem laborum
-              sint tenetur, earum facere veniam?
-            </p>
-            <p>
-              Sunt fugiat veniam consectetur soluta quia ex tempora quaerat,
-              perferendis! Itaque a praesentium saepe ex distinctio aliquid quis
-              laborum sit, porro dolor odio, iste eos laboriosam dolorum maiores
-              harum reiciendis vitae doloribus illum voluptatibus nobis maxime
-              assumenda ipsam tempora fugiat. Perspiciatis quibusdam hic cum
-              tempore.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="expertise">
-      <div class="container">
-        <div class="expertise-wrapper">
-          <div class="title">Our Expertise</div>
-          <div class="expertise__content">
-            <div class="expertise__content-items">
-              <div class="expertise__content-item">
-                <div class="content__progress-bar">
-                  <div class="progress-bar-inner"></div>
-                  <div class="progress-bar-percent-wrapper">
-                    <span class="progress-bar-percent-text">90%</span>
-                  </div>
-                </div>
-                <div class="content-item__name">BRANDING</div>
-              </div>
-              <div class="expertise__content-item">
-                <div class="content__progress-bar">
-                  <div class="progress-bar-inner"></div>
-                  <div class="progress-bar-percent-wrapper">
-                    <span class="progress-bar-percent-text">90%</span>
-                  </div>
-                </div>
-                <div class="content-item__name">DESIGN</div>
-              </div>
-              <div class="expertise__content-item">
-                <div class="content__progress-bar">
-                  <div class="progress-bar-inner"></div>
-                  <div class="progress-bar-percent-wrapper">
-                    <span class="progress-bar-percent-text">90%</span>
-                  </div>
-                </div>
-                <div class="content-item__name">DEVELOPMENT</div>
-              </div>
+            <div class="main-logo">
+              <a href="/"><img src="svg/logo-main.svg" alt="" /></a>
             </div>
-            <div class="expertise__content-text content-text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Laudantium commodi totam culpa, dolorum asperiores iusto quidem,
-                nesciunt hic eaque blanditiis enim, id maiores nam nobis
-                dignissimos aliquam ad minus nisi.
-              </p>
-              <p>
-                Autem laborum sint tenetur, earum facere veniam? Sunt fugiat
-                veniam consectetur soluta quia ex tempora quaerat, perferendis!
-                Itaque a praesentium saepe ex distinctio aliquid quis
-              </p>
+            <div onclick="show_menu()" class="login-menu-mob">
+              <img src="svg/mobile/headerloginmenu.svg" alt="" />
             </div>
           </div>
-          <div class="expertise__items">
-            <div class="expertise__item">
-              <img class="expertise__item-img" src="svg/vector.svg" alt="" />
-              <div class="expertise__item-box">
-                <div class="expertise__item-title">GRAPHIC DESIGN</div>
-                <div class="expertise__item-text content-text">
-                  Lorem Ipsum Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
-                  consequat ipsum
-                </div>
-              </div>
-            </div>
-            <div class="expertise__item">
-              <img class="expertise__item-img" src="svg/monitor.svg" alt="" />
-              <div class="expertise__item-box">
-                <div class="expertise__item-title">GRAPHIC DESIGN</div>
-                <div class="expertise__item-text content-text">
-                  Lorem Ipsum Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
-                  consequat ipsum
-                </div>
-              </div>
-            </div>
-            <div class="expertise__item">
-              <img
-                class="expertise__item-img"
-                src="svg/speaker copy.svg"
-                alt=""
+          <div class="header-links">
+            <ul>
+              <li>
+                <a href="/">
+                  <span>Советник</span>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span class="underlined-line">Мой портфель</span>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span>Криптовалюта</span>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span>Тарифы</span>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span>Faq</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <div class="pointer">
+              <input
+                type="text"
+                disabled
+                class="textBox"
+                placeholder="Language"
               />
-              <div class="expertise__item-box">
-                <div class="expertise__item-title">GRAPHIC DESIGN</div>
-                <div class="expertise__item-text content-text">
-                  Lorem Ipsum Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
-                  consequat ipsum
+            </div>
+            <div class="horis-line-scroll"></div>
+            <div class="option">
+              <div onclick="show(this)">English</div>
+              <div onclick="show(this)">Русский</div>
+              <div class="onload" onclick="show(this)">Хохлятский</div>
+              <div onclick="show(this)">Руся</div>
+              <div onclick="show(this)">Пидор</div>
+              <div onclick="show(this)">Беларуская</div>
+              <div onclick="show(this)">Беларуская</div>
+              <div onclick="show(this)">Беларуская</div>
+              <div onclick="show(this)">Беларуская</div>
+              <div onclick="show(this)">Беларуская</div>
+              <div onclick="show(this)">Беларуская</div>
+              <div onclick="show(this)">Беларуская</div>
+            </div>
+          </div>
+          <div class="login-menu">
+            <img class="login-button-icon" src="svg/person.svg" />
+            <div class="login-links">
+              <a class="login-link-hover" href="/">Вход</a>
+              <span class="vert-div">|</span>
+              <a class="login-link-hover" href="/">Регистрация</a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div class="main-alt hide">
+      <div class="background-blue"></div>
+    </div>
+
+    <main class="main">
+      <div class="background-blue">
+        <div class="container-width">
+          <div class="header">
+            <div class="left">
+              <h1>
+                <span>Учёт и контроль</span> <br />
+                <span class="blue-text">ваших инвестиций</span>
+              </h1>
+              <ul>
+                <li>Следите за портфелем</li>
+                <li>Добавляйте купленные акции, анализируйте доходность</li>
+                <li>
+                  Доступно для акций и ETF NYSE, NASDAQ, Санкт-Петербургской
+                  биржи и ММВБ
+                </li>
+              </ul>
+              <div>
+                <button class="try-30days-trial">
+                  Попробовать 30 дней бесплатно
+                </button>
+              </div>
+            </div>
+            <div class="right">
+              <img src="svg/huiphone-svg1.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="background-gradient">
+        <div class="container-width">
+          <div class="article-main top margin-bot">
+            <h1>Интеллектуальная замена Excel и отчетам брокера</h1>
+            <p>
+              Просто добавляйте сделки с <b>акциями</b> - ваш доход рассчитается
+              автоматически. Следите за вашим портфелем, изучайте подробную
+              <b>аналитику</b> и получайте важные оповещения
+              <span class="underlined-line">с&nbsp;любого&nbsp;устройства</span>
+            </p>
+            <div class="img-big">
+              <img src="svg/exel-svg.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="background-blue">
+        <div class="container-width">
+          <div class="article-main mid">
+            <h1>Для любого инвестора</h1>
+            <p>
+              Только купили свою первую акцию или совершаете десятки сделок в
+              день -
+              <a class="link-hover" class="blue-text" href="/">Beatmarket</a>
+              поможет вам контролировать инвестиции
+            </p>
+            <div class="cards">
+              <div class="card-vertical">
+                <div class="plain-white">
+                  <img src="svg/vert-svg1/savings/cuate.svg" />
                 </div>
+                <h1>Начинающий</h1>
+                <p>
+                  Удобный интерфейс и <b>никаких сложных формул</b> - сервис
+                  рассчитает всё необходимое
+                </p>
+              </div>
+              <div class="card-vertical">
+                <div class="plain-white">
+                  <img src="svg/vert-svg2/finance/cuate.svg" />
+                </div>
+                <h1>Опытный</h1>
+                <p>
+                  Ведите учет дивидендов и купонных выплат,
+                  <b>сравнивайте доходность</b> вашего портфеля
+                </p>
+              </div>
+              <div class="card-vertical">
+                <div class="plain-white">
+                  <img src="svg/vert-svg3/site-stats/cuate.svg" />
+                </div>
+                <h1>Профессионал</h1>
+                <p>
+                  <b>Настраивайте таблицы</b> под себя, экспортируйте данные в
+                  Excel и делитесь портфелем с другими
+                </p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="features">
-      <div class="features__img"></div>
-      <div class="features__wrapper">
-        <div class="container">
-          <div class="features__inner">
-            <div class="title features__title">Let’s make magic.</div>
-            <div class="features__text content-text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-                veniam odio itaque. Molestiae aut dicta accusantium quod, modi
-                ad alias enim dolor delectus iusto! Inventore tempora labore
-                nobis doloribus optio nulla sit corrupti nostrum, tempore
-                debitis pariatur minus maiores velit, autem ex eum distinctio
-                error fugit. Itaque voluptatum quam veritatis fuga impedit nulla
-                dolor.
-              </p>
-              <p>
-                Nam dignissimos, ratione odit doloribus cum porro, aut. Ipsum
-                nisi odio voluptatum, et, reprehenderit accusamus, est provident
-                debitis dicta ullam esse assumenda, odit? Alias architecto enim
-                pariatur libero ipsam mollitia maiores minus quibusdam numquam
-                perspiciatis eveniet sit dolores eligendi inventore, ea
-                voluptatum debitis iure, repellendus iste culpa! Voluptatibus
-                quam ipsum nisi odit deserunt qui, consectetur ducimus, quis
-                officia quaerat sapiente dolores, ad libero! Tenetur provident,
-                omnis.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="portfolio">
-      <div class="container">
-        <div class="portfolio__wapper">
-          <div class="portfolio__head">
-            <div class="title">Portfolio</div>
-          </div>
-          <div class="portfolio__buttons">
-            <button class="portfolio__btn portfolio__btn--active">ALL</button>
-            <button class="portfolio__btn">BRANDING</button>
-            <button class="portfolio__btn">BRANDING</button>
-            <button class="portfolio__btn">PHOTOGRAPHY</button>
-            <button class="portfolio__btn">ILLUSTRATION</button>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__items">
-        <div class="portfolio__items-img">
-          <div class="portfolio__item-title">OCCA CUPIDATAT</div>
-          <div class="portfolio__item-descr">DESIGN</div>
-        </div>
-        <div class="portfolio__items-img">
-          <div class="portfolio__item-title">OCCA CUPIDATAT</div>
-          <div class="portfolio__item-descr">DESIGN</div>
-        </div>
-        <div class="portfolio__items-img">
-          <div class="portfolio__item-title">OCCA CUPIDATAT</div>
-          <div class="portfolio__item-descr">DESIGN</div>
-        </div>
-        <div class="portfolio__items-img">
-          <div class="portfolio__item-title">OCCA CUPIDATAT</div>
-          <div class="portfolio__item-descr">DESIGN</div>
-        </div>
-        <div class="portfolio__items-img">
-          <div class="portfolio__item-title">OCCA CUPIDATAT</div>
-          <div class="portfolio__item-descr">DESIGN</div>
-        </div>
-        <div class="portfolio__items-img">
-          <div class="portfolio__item-title">OCCA CUPIDATAT</div>
-          <div class="portfolio__item-descr">DESIGN</div>
-        </div>
-        <div class="portfolio__items-img">
-          <div class="portfolio__item-title">OCCA CUPIDATAT</div>
-          <div class="portfolio__item-descr">DESIGN</div>
-        </div>
-        <div class="portfolio__items-img">
-          <div class="portfolio__item-title">OCCA CUPIDATAT</div>
-          <div class="portfolio__item-descr">DESIGN</div>
-        </div>
-        <div class="portfolio__items-img">
-          <div class="portfolio__item-title">OCCA CUPIDATAT</div>
-          <div class="portfolio__item-descr">DESIGN</div>
-        </div>
-      </div>
-      <button class="portfolio__btn-all">VIEW MORE PROJECTS</button>
-    </section>
-    <section class="video">
-      <div class="video__wrapper">
-        <div class="video__quotes">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </div>
-        <div class="video__quotes-author">Gilbert Hammond</div>
-      </div>
-
-      <video class="video__content" src=""></video>
-    </section>
-    <section class="statistics">
-      <div class="container">
-        <div class="statistics__inner">
-          <div class="staticstics__item">
-            <div class="statistics__item-num">305</div>
-            <div class="statistics__item-text">Web Design</div>
-          </div>
-          <div class="staticstics__item">
-            <div class="statistics__item-num">220</div>
-            <div class="statistics__item-text">Logo Designs</div>
-          </div>
-          <div class="staticstics__item">
-            <div class="statistics__item-num">52</div>
-            <div class="statistics__item-text">Print Designs</div>
-          </div>
-          <div class="staticstics__item">
-            <div class="statistics__item-num">88</div>
-            <div class="statistics__item-text">Mobile Apps</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="slider">
-      <div
-        class="slider__wrapper js-flickity"
-        data-flickity-options='{ "wrapAround": true }'
-      >
-        <div class="slider__item container">
-          <div class="slider__item-container">
-            <div class="slider__item-title">
-              Then they show that show to the people who make shows
-            </div>
-            <div class="slider__item-text content-text">
-              <p>
-                The path of the righteous man is beset on all sides by the
-                iniquities of the selfish and the tyranny of evil men. Blessed
-                is he who, in the name of charity and good will, shepherds the
-                weak through the valley of darkness, for he is truly his
-                brother’s.The path of the righteous man is beset on all sides by
-                the iniquities of the selfish and the tyranny of evil men.
-                Blessed is he who, in the name of charity and good will,
-                shepherds the weak through the valley of darkness, for he is
-                truly his brother’s.The path of the righteous man is beset on
-                all sides by the iniquities of the selfish and the tyranny of
-                evil men. Blessed is he who, in the name of charity and good
-                will, shepherds the weak through the valley of darkness, for he
-                is truly his brother’s.The path of the righteous man is beset on
-                all sides by the iniquities of the selfish and the tyranny of
-                evil men. Blessed is he who, in the name of charity and good
-                will, shepherds the weak through the valley of darkness, for he
-                is truly his brother’s.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="slider__item container">
-          <div class="slider__item-container">
-            <div class="slider__item-title">
-              Then they show that show to the people who make shows
-            </div>
-            <div class="slider__item-text content-text">
-              <p>
-                The path of the righteous man is beset on all sides by the
-                iniquities of the selfish and the tyranny of evil men. Blessed
-                is he who, in the name of charity and good will, shepherds the
-                weak through the valley of darkness, for he is truly his
-                brother’s.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="slider__item container">
-          <div class="slider__item-container">
-            <div class="slider__item-title">
-              Then they show that show to the people who make shows
-            </div>
-            <div class="slider__item-text content-text">
-              <p>
-                The path of the righteous man is beset on all sides by the
-                iniquities of the selfish and the tyranny of evil men. Blessed
-                is he who, in the name of charity and good will, shepherds the
-                weak through the valley of darkness, for he is truly his
-                brother’s.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="slider__item container">
-          <div class="slider__item-container">
-            <div class="slider__item-title">
-              Then they show that show to the people who make shows
-            </div>
-            <div class="slider__item-text content-text">
-              <p>
-                The path of the righteous man is beset on all sides by the
-                iniquities of the selfish and the tyranny of evil men. Blessed
-                is he who, in the name of charity and good will, shepherds the
-                weak through the valley of darkness, for he is truly his
-                brother’s.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="slider__item container">
-          <div class="slider__item-container">
-            <div class="slider__item-title">
-              Then they show that show to the people who make shows
-            </div>
-            <div class="slider__item-text content-text">
-              <p>
-                The path of the righteous man is beset on all sides by the
-                iniquities of the selfish and the tyranny of evil men. Blessed
-                is he who, in the name of charity and good will, shepherds the
-                weak through the valley of darkness, for he is truly his
-                brother’s.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="slider__item container">
-          <div class="slider__item-container">
-            <div class="slider__item-title">
-              Then they show that show to the people who make shows
-            </div>
-            <div class="slider__item-text content-text">
-              <p>
-                The path of the righteous man is beset on all sides by the
-                iniquities of the selfish and the tyranny of evil men. Blessed
-                is he who, in the name of charity and good will, shepherds the
-                weak through the valley of darkness, for he is truly his
-                brother’s.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="team">
-      <div class="container">
-        <div class="team__wrapper">
-          <div class="title">Our Team</div>
-          <div class="team__items">
-            <div class="team__item">
-              <img class="team__item-img" src="img/person1.png" alt="" />
-              <div class="team__item-text">
-                <div class="team__item-name">BERNARD SPARKS</div>
-                <div class="team__item-position">CEO</div>
-              </div>
-            </div>
-            <div class="team__item">
-              <img class="team__item-img" src="img/person2.png" alt="" />
-              <div class="team__item-text">
-                <div class="team__item-name">BERNARD SPARKS</div>
-                <div class="team__item-position">CEO</div>
-              </div>
-            </div>
-            <div class="team__item">
-              <img class="team__item-img" src="img/person3.png" alt="" />
-              <div class="team__item-text">
-                <div class="team__item-name">BERNARD SPARKS</div>
-                <div class="team__item-position">CEO</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="pricing">
-      <div class="container">
-        <div class="title">Pricing Plans</div>
-        <div class="pricing__items">
-          <div class="pricing__item">
-            <div class="pricing__item-name">Basic</div>
-            <div class="pricing__wrapper">
-              <div class="pricing__item-rate">29</div>
-              <ul class="pricing__list">
-                <li class="pricing__list-item">1 Logo Design</li>
-                <li class="pricing__list-item">1 Website Design</li>
-                <li class="pricing__list-item">1 Domain Free</li>
-                <li class="pricing__list-item">3 Month License</li>
-                <li class="pricing__list-item">1 GB Storage</li>
-              </ul>
-              <button class="pricing__button">CHOOSE PLAN</button>
-            </div>
-          </div>
-          <div class="pricing__item">
-            <div class="pricing__item-name">Basic</div>
-            <div class="pricing__wrapper">
-              <div class="pricing__item-rate">29</div>
-              <ul class="pricing__list">
-                <li class="pricing__list-item">1 Logo Design</li>
-                <li class="pricing__list-item">1 Website Design</li>
-                <li class="pricing__list-item">1 Domain Free</li>
-                <li class="pricing__list-item">3 Month License</li>
-                <li class="pricing__list-item">1 GB Storage</li>
-              </ul>
-              <button class="pricing__button">CHOOSE PLAN</button>
-            </div>
-          </div>
-          <div class="pricing__item">
-            <div class="pricing__item-name">Basic</div>
-            <div class="pricing__wrapper">
-              <div class="pricing__item-rate">29</div>
-              <ul class="pricing__list">
-                <li class="pricing__list-item">1 Logo Design</li>
-                <li class="pricing__list-item">1 Website Design</li>
-                <li class="pricing__list-item">1 Domain Free</li>
-                <li class="pricing__list-item">3 Month License</li>
-                <li class="pricing__list-item">1 GB Storage</li>
-              </ul>
-              <button class="pricing__button">CHOOSE PLAN</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="contact">
-      <div class="container">
-        <div class="contact__wrapper">
-          <div class="title">Get in touch</div>
-          <div class="contact__content">
-            <form class="contact__form" action="">
-              <div class="contact__form-wrapper">
-                <input
-                  class="contact__form-input"
-                  type="text"
-                  placeholder="YOUR NAME"
-                />
-                <input
-                  class="contact__form-input"
-                  type="text"
-                  placeholder="VALID EMAIL"
-                />
-              </div>
-              <textarea
-                class="contact__form-textarea"
-                placeholder="YOUR MESSAGE"
-              ></textarea>
-              <button class="contact__form-btn">SEND MESSAGE</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="contact_map"></div>
-    </section>
-    <footer class="footer">
-      <div class="footer__content">
-        <div class="container">
-          <div class="footer__content-wrapper">
-            <div class="footer__logo">
-              <a class="logo__link" href="#">
-                <img class="logo__img" src="svg/Logo.svg" alt="" />
-              </a>
-            </div>
-            <div class="footer__social">
-              <a class="footer__social-link" href="">FACEBOOK</a>
-              <a class="footer__social-link" href="">TWITTER</a>
-              <a class="footer__social-link" href="">GOOGLE+</a>
-              <a class="footer__social-link" href="">BEHANCE</a>
-              <a class="footer__social-link" href="">DRIBBLE</a>
-              <a class="footer__social-link" href="">INSTAGRAM</a>
-            </div>
-            <div class="footer__address">
-              <div class="footer__address-adr">
-                Mese Selimovica 52, Banja Luka - BiH
-              </div>
-              <a class="footer__address-phone" href="tel:0038765252222"
-                >(00387) 65 252 222</a
-              >
-              <a class="footer__address-email" href="mailto:info@mail.com"
-                >info@mail.com</a
-              >
-            </div>
-
-            <button class="footer-to_top-btn">
-              <img src="svg/angle-up.svg" alt="" />
+            <button class="try-30days-trial">
+              Попробовать 30 дней бесплатно
             </button>
           </div>
         </div>
       </div>
-      <div class="footer__copy">@2015 Oxygen Theme</div>
+      <div class="background-gradient">
+        <div class="container-width">
+          <div class="article-main top">
+            <h1>Почему с нами удобно</h1>
+            <div class="cards-horisontal">
+              <div class="card-right">
+                <img class="img" src="svg/horis-svg1.svg" />
+                <div class="text">
+                  <h1>Начните всего за&nbsp;пару минут</h1>
+                  <p>
+                    В пару кликов добавьте все свои сделки. Остальное платформа
+                    <b>рассчитает автоматически</b>.
+                  </p>
+                </div>
+              </div>
+              <div class="card-left">
+                <img class="img img1" src="svg/horis-svg2.svg" />
+                <div class="text">
+                  <h1>Полный контроль над портфелем</h1>
+                  <p>
+                    Наблюдайте за&nbsp;доходностью ваших бумаг
+                    и&nbsp;их&nbsp;долей в&nbsp;портфеле. Изучайте графики,
+                    оценивайте прибыль и&nbsp;комиссии.
+                    <br /><br />Теперь каждая копейка
+                    <b>под&nbsp;вашим контролем</b>.
+                  </p>
+                </div>
+              </div>
+              <div class="card-right">
+                <img class="img" src="svg/horis-svg3.svg" />
+                <div class="text">
+                  <h1>Настраивайте под себя</h1>
+                  <p>
+                    Хотите видеть курсовую доходность или дивидендную? Диаграмму
+                    или таблицу?
+                    <br /><br /><b>Гибкий и&nbsp;простой интерфейс</b> позволит
+                    просматривать те&nbsp;данные, которые нужны именно вам
+                  </p>
+                </div>
+              </div>
+              <div class="card-left">
+                <img class="img img2" src="svg/horis-svg4.svg" />
+                <div class="text">
+                  <h1>Учет дивидендов и купонов</h1>
+                  <p>
+                    Получайте оповещения о&nbsp;выплатах и&nbsp;добавляйте
+                    их&nbsp;в&nbsp;сделки.
+                    <br /><br />Оценивайте дивидендную доходность акций
+                    и&nbsp;<b>не&nbsp;пропускайте купонные выплаты</b>
+                  </p>
+                </div>
+              </div>
+              <div class="card-right">
+                <img class="img" src="svg/horis-svg5.svg" />
+                <div class="text">
+                  <h1>Делитесь успехами</h1>
+                  <p>
+                    <b>Сделайте портфель публичным</b> и&nbsp;выберите только
+                    то, что&nbsp;хотите показать окружающим. Вставьте баннер
+                    с&nbsp;показателями портфеля в ваш блог
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="background-white">
+        <div class="container-width">
+          <div class="article-main top">
+            <h1>Почему нам доверяют</h1>
+            <div class="cards-min">
+              <div class="card-min-vertical">
+                <div class="white-plain">
+                  <img src="svg/cards_vert_small/1.svg" alt="" />
+                </div>
+                <div class="text">
+                  <div class="mid-text">
+                    <h1>Более 3 лет работы</h1>
+                  </div>
+                  <p>
+                    Более 30 млрд. рублей активов находится в портфелях наших
+                    пользователей
+                  </p>
+                </div>
+              </div>
+              <div class="card-min-vertical">
+                <div class="white-plain">
+                  <img src="svg/cards_vert_small/2.svg" alt="" />
+                </div>
+                <div class="text">
+                  <div class="mid-text">
+                    <h1>Команда профессионалов</h1>
+                  </div>
+                  <p>
+                    Каждый разработчик сервиса имеет брокерский счет и опыт на
+                    бирже
+                  </p>
+                </div>
+              </div>
+              <div class="card-min-vertical">
+                <div class="white-plain">
+                  <img src="svg/cards_vert_small/3.svg" alt="" />
+                </div>
+                <div class="text">
+                  <div class="mid-text">
+                    <h1>Полная анонимность</h1>
+                  </div>
+                  <p>
+                    Мы не требуем никаких документов и не храним ваши
+                    персональные данные
+                  </p>
+                </div>
+              </div>
+              <div class="card-min-vertical">
+                <div class="white-plain">
+                  <img src="svg/cards_vert_small/4.svg" alt="" />
+                </div>
+                <div class="text">
+                  <div class="mid-text">
+                    <h1>Оперативная поддержка</h1>
+                  </div>
+                  <p>
+                    Задайте вопрос, и мы гарантированно ответим вам в течение
+                    часа
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h1text">
+            <h1>
+              Присоединяйтесь к более чем
+              <span class="underlined-line">22&nbsp;000&nbsp;инвесторов!</span>
+            </h1>
+            <button class="try-30days-trial">
+              Попробовать 30 дней бесплатно
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="background-blue">
+        <div class="container-width">
+          <div class="ceo-info">
+            <div class="left">
+              <div>
+                <h1>Основатель -<br />Максим Дьяконов</h1>
+                <p>
+                  Успешно инвестирует уже более 7 лет и делится своим опытом с
+                  <b>подписчиками Telegram</b> канала совершенно бесплатно.
+                </p>
+                <button class="subscribe">
+                  <svg
+                    class="tg-svg-ico"
+                    width="25"
+                    height="21"
+                    viewBox="0 0 25 21"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.80932 13.8136L9.39578 19.6303C9.98744 19.6303 10.2437 19.3761 10.551 19.0709L13.3249 16.4199L19.0729 20.6293C20.127 21.2168 20.8697 20.9074 21.1541 19.6595L24.927 1.98031L24.9281 1.97926C25.2624 0.42093 24.3645 -0.188445 23.3374 0.193847L1.16036 8.68447C-0.353184 9.27197 -0.330267 10.1157 0.903066 10.498L6.57286 12.2616L19.7426 4.02093C20.3624 3.61051 20.926 3.8376 20.4624 4.24801L9.80932 13.8136Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+
+                  <span>Подписаться на канал</span>
+                </button>
+              </div>
+            </div>
+            <div class="right">
+              <img src="svg/bitmarket-telega.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="background-white">
+        <div class="container-width">
+          <div class="main-foot">
+            <div class="logo">
+              <a href="/"><img src="svg/logo-main.svg" alt="" /> </a>
+            </div>
+            <div class="email">
+              <div>
+                <p>Сотрудничество:</p>
+                <a class="link-hover" href="mailto: bmpartners@beatmarket.one"
+                  >bmpartners@beatmarket.one</a
+                >
+              </div>
+            </div>
+            <div class="prava">
+              BeatMarket by
+              <a class="link-hover" href="/">Montis Group</a> 2021.<br />
+              Все права защищены
+            </div>
+            <div class="ip">
+              Индивидуальный предприниматель Дьяконов Максим Сергеевич ИНН
+              503010875297 ОГРН 318774600266905 от 17 мая 2018 г Россия, г.
+              Москва, г. Московский, ул. Атласова д.3, пом.146, +79255427889
+            </div>
+            <div class="links-left">
+              <a class="linka link-hover" href="/" class="">
+                Пользовательское соглашение
+              </a>
+              <a class="linka link-hover" href="/" class="">
+                Оферта регулярных платежей
+              </a>
+            </div>
+            <div class="links-right">
+              <a class="linka link-hover" href="/" class="">
+                Политика конфиденциальности
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script src="Flickity.js"></script>
+    <script>
+      let show_links_bool = false;
+      let show_menu_bool = false;
+
+      function switch_elems() {
+        if (show_links_bool == true) {
+          document.querySelector(".main").classList.add("hide");
+          document.querySelector(".footer").classList.add("hide");
+          document.querySelector(".header-bg").classList.add("full-height");
+          document.querySelector(".main-alt").classList.remove("hide");
+          document.querySelector(".header-links").classList.add("show");
+
+          document.querySelector(".xmenu").classList.add("hide");
+          document.querySelector(".xcros").classList.remove("hide");
+        } else {
+          document.querySelector(".main").classList.remove("hide");
+          document.querySelector(".footer").classList.remove("hide");
+          document.querySelector(".header-bg").classList.remove("full-height");
+          document.querySelector(".main-alt").classList.add("hide");
+          document.querySelector(".header-links").classList.remove("show");
+
+          document.querySelector(".xmenu").classList.remove("hide");
+          document.querySelector(".xcros").classList.add("hide");
+        }
+      }
+
+      function switch_menu() {
+        if (show_menu_bool == true) {
+          document.querySelector(".login-menu").classList.add("show-right-z");
+          document.querySelector(".dropdown").classList.add("show-right-z");
+        } else {
+          document
+            .querySelector(".login-menu")
+            .classList.remove("show-right-z");
+          document.querySelector(".dropdown").classList.remove("show-right-z");
+        }
+      }
+
+      function show_menu() {
+        show_menu_bool = !show_menu_bool;
+        show_links_bool = false;
+
+        if (show_links_bool == false) {
+          switch_elems();
+        }
+
+        switch_menu();
+      }
+
+      function show_links() {
+        show_links_bool = !show_links_bool;
+        show_menu_bool = false;
+
+        if (show_menu_bool == false) {
+          switch_menu();
+        }
+
+        switch_elems();
+      }
+
+      function reset_select() {
+        var a = document.querySelector(".selected");
+        if (a !== null) {
+          a.classList.remove("selected");
+          // console.log(a);
+        }
+      }
+
+      function show(text) {
+        // console.log(text);
+        reset_select();
+        text.classList.add("selected");
+        document.querySelector(".textBox").value = text.textContent;
+      }
+
+      let dropdown = document.querySelector(".dropdown");
+      dropdown.onclick = function () {
+        dropdown.classList.toggle("active");
+      };
+
+      reset_select();
+      dropdown.addEventListener(
+        "load",
+        show(document.querySelector(".onload"))
+      );
+
+      function reportWindowSize() {
+        if (window.innerWidth >= 1200 && show_links_bool == true) {
+          show_links();
+        }
+
+        if (window.innerWidth >= 1200 && show_menu_bool == true) {
+          show_menu();
+        }
+
+        // if (window.innerWidth < 1200 && show_links_bool == false) {
+        //   show_links();
+        // }
+      }
+
+      window.onresize = reportWindowSize;
+    </script>
   </body>
 </html>
